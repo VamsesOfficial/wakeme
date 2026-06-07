@@ -12,7 +12,6 @@
     "@expo/env": "^2.3.0",
     "@react-native-async-storage/async-storage": "2.1.2",
     "expo": "~52.0.0",
-    "expo-av": "~14.0.0",
     "expo-constants": "~17.0.0",
     "expo-device": "~7.0.0",
     "expo-keep-awake": "~14.0.0",
