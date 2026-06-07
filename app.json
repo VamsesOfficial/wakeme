@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "WakeMe",
+    "slug": "wakeme",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#050508"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#050508"
+      },
+      "package": "com.olaa.wakeme",
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.USE_FULL_SCREEN_INTENT",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#6C63FF",
+          "sounds": [
+            "./assets/alarm.wav"
+          ],
+          "mode": "production"
+        }
+      ]
+    ],
+    "scheme": "wakeme",
+    "extra": {
+      "eas": {
+        "projectId": "fcb321b5-1ba4-4c48-bd53-445010132795"
+      },
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
